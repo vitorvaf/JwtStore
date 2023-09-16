@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions;
-using JwtStore.Core.SharedCotext;
-using JwtStore.Core.SharedCotext.ValueObjects;
+using JwtStore.Core.Context.SharedCotext;
+using JwtStore.Core.Context.SharedCotext.ValueObjects;
 
-namespace JwtStore.Core.AccountContext.ValueObjects
+namespace JwtStore.Core.Context.AccountContext.ValueObjects
 {
     public partial class Email : ValueObject
     {
