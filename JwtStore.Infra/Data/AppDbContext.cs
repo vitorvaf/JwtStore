@@ -2,9 +2,9 @@ using JwtStore.Core.Context.AccountContext;
 using JwtStore.Infra.AccountContext.Mapping;
 using Microsoft.EntityFrameworkCore;
 
-public class AppDbCotext : DbContext
+public class AppDbContext : DbContext
 {
-    public AppDbCotext(DbContextOptions<AppDbCotext> options) 
+    public AppDbContext(DbContextOptions<AppDbContext> options) 
         : base(options)
     {
     }
