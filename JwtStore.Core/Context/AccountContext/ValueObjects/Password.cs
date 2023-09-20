@@ -19,13 +19,13 @@ public class Password : ValueObject
 
         Hash = Hashing(text);
     }
-    
+
     public bool Challenge(string plainTextPassword)
         => Verify(Hash, plainTextPassword);
-    
+
     public string Hash { get; } = string.Empty;
     public string ResetCode { get; } = Guid.NewGuid().ToString("N")[..8].ToUpper();
-    
+
     private static string Generate(
         short length = 16,
         bool includeSpecialChars = true,
@@ -42,7 +42,7 @@ public class Password : ValueObject
 
         return new string(res);
     }
-    
+
     private static string Hashing(
         string password,
         short saltSize = 16,
@@ -65,7 +65,7 @@ public class Password : ValueObject
 
         return $"{iterations}{splitChar}{salt}{splitChar}{key}";
     }
-    
+
     private static bool Verify(
         string hash,
         string password,
