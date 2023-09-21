@@ -1,5 +1,5 @@
 using JwtStore.Core.Context.AccountContext;
-using JwtStore.Infra.AccountContext.Mapping;
+using JwtStore.Infra.Context.AccountContext.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
