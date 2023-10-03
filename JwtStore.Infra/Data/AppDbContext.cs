@@ -1,4 +1,4 @@
-using JwtStore.Core.Context.AccountContext;
+using JwtStore.Core.Context.AccountContext.Entites;
 using JwtStore.Infra.Context.AccountContext.Mapping;
 using Microsoft.EntityFrameworkCore;
 

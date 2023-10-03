@@ -5,7 +5,6 @@ builder.AddConfiguration();
 builder.AddDatabase();
 builder.AddJwtAuthentication();
 
-
 var app = builder.Build();
 
 app.UseHttpsRedirection();
