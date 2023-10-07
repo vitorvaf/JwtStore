@@ -4,8 +4,7 @@ using JwtStore.Core.Context.AccountContext.ValueObjects;
 
 namespace JwtStore.Core.Context.AccountContext.UseCases.Create;
 
-public class Handler
-
+public class Handler : IRequestHandler<Request, Response>
 {
     private readonly IRepository _accountRepository;
     private readonly IService _accountService;
