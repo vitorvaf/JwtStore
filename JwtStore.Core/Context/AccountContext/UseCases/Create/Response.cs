@@ -1,6 +1,6 @@
 using Flunt.Notifications;
 
-namespace JwtStore.Core.Context.AccountContext.UseCases
+namespace JwtStore.Core.Context.AccountContext.UseCases.Create
 {
     public class Response : SharedCotext.UseCases.Response
     {

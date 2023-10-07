@@ -1,6 +1,7 @@
 using JwtStore.Core.Context.AccountContext.Entites;
 using JwtStore.Core.Context.AccountContext.UseCases.Create.Contracts;
 using JwtStore.Core.Context.AccountContext.ValueObjects;
+using MediatR;
 
 namespace JwtStore.Core.Context.AccountContext.UseCases.Create;
 

@@ -2,7 +2,7 @@
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace JwtStore.Core.Context.AccountContext.UseCases;
+namespace JwtStore.Core.Context.AccountContext.UseCases.Create;
 
 public static class Specification 
 {
