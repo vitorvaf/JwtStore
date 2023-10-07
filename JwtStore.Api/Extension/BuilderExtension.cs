@@ -59,4 +59,10 @@ public static class BuilderExtension
 
         builder.Services.AddAuthorization();
     }
+
+    public static void AddMediatR(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddMediatR(
+            x => x.RegisterServicesFromAssembly(typeof(Configuration).Assembly));
+    }
 }

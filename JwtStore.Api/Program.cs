@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddConfiguration();
 builder.AddDatabase();
 builder.AddJwtAuthentication();
+builder.AddAcountContex();
+builder.AddMediatR();
 
 var app = builder.Build();
 
