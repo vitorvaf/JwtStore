@@ -16,14 +16,14 @@ namespace JwtStore.Api.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(120)", nullable: false),
+                    Name = table.Column<string>(type: "NVARCHAR(120)", maxLength: 120, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmailVerificationCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmailVerificationExpiresAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     EmailVerificationVerifiedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PasswordResetCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Image = table.Column<string>(type: "varchar(255)", nullable: false)
+                    Image = table.Column<string>(type: "VARCHAR(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
                 {
